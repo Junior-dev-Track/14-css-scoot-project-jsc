@@ -1,7 +1,287 @@
-html {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend+Deca:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html {    
     font-size: 62.5%
 }
 
 body {
-    background-color: lightblue;
+    margin: 0px;
 }
+
+.button {
+    padding: 1.5rem 6rem;
+    background-color: $yellow;
+    font-family: 'Space Mono';
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.banner  {
+    background-image: url('../../images/Bitmap.jpg');
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+
+    width: 100vw;
+    padding: 0 165px;
+
+
+    &--content {
+
+        width: 1110px;
+        height: 150px;
+
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        h1 {
+            font-family: 'Space Mono';
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 56px;
+            letter-spacing: -2.5px;
+            text-align: left;
+            color: white;
+        }
+
+       
+    }
+
+    .banner__circles {
+        position: absolute;
+        right:  -31px;
+        top: 38px;
+        width: 234px;
+        height: 63px;
+        padding: 0.5px 0px 0.5px 0px;
+        display: flex;
+        justify-content: space-between;
+        
+
+        &--circle {
+            width: 62px;
+            height: 62px;
+            gap: 0px;
+            border: 3px solid #FFFFFF;
+            border-radius: 50%;
+            opacity: 0px;
+        }
+
+        &--half-circle {
+            width: 62px;
+            height: 62px;
+            gap: 0px;
+            border: 3px solid #FFFFFF;
+            border-radius: 50%;
+            background-color: white;
+        }
+
+    }
+}
+
+
+main {
+    .care {
+        padding-top: 100px;
+        padding-left: 165px;
+
+        display: flex;
+        justify-content: space-between;
+
+
+        &__text {
+            width: 445px;
+            height: 400px;
+
+
+            h2 {
+                font-family: 'Space Mono';
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 48px;
+                letter-spacing: -2.142857074737549px;
+                text-align: left;
+                color: $darknavy;
+                margin-bottom: 2rem;
+            }
+
+
+            p {
+                font-family: 'Lexend Deca';
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 25px;
+                text-align: left;
+                color: $dimgrey;
+                margin-bottom: 5rem;
+                margin-top: 0;
+            }
+        }
+
+
+        &__image {
+            background-image: url('../../images/Group15.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            position: relative;
+            left: 25px;
+
+            width: 720px;
+            height: 400px;
+        }
+    }
+
+
+    .why {
+        h2 {
+            font-family: 'Space Mono';
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 48px;
+            letter-spacing: -2.142857074737549px;
+            text-align: center;
+            color: $darknavy;
+        }
+
+
+        &--reasons {
+            padding: 0 165px;
+
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+
+
+            .why__values {
+                margin-top: 5rem;
+                width: 30%;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+
+                &--image {
+                    width: 220px;
+                    height: 220px;
+                    border-radius: 50%;
+                    background-size: cover;
+                    margin-bottom: -3.5rem;
+                }
+
+
+                &--tech {
+                    background-image: url('../../images/tech.png');
+                }
+
+
+                &--integrity {
+                    background-image: url('../../images/integrity.png');
+                }
+
+
+                &--community {
+                    background-image: url('../../images/community.png');
+                }
+
+
+                &--number {
+                    width: 96px;
+                    height: 96px;
+                    border-radius: 50%;
+
+                    background-color: $yellow;
+
+                    display: flex;
+                    align-items: center;
+
+                    .number {
+                        font-family: 'Space Mono';
+                        font-size: 24px;
+                        font-weight: 700;
+                        line-height: 28px;
+                        letter-spacing: -1.0714285373687744px;
+                        width: 100%;
+                        color: #495567;
+                    }
+                }
+
+                h3 {
+                    font-family: 'Space Mono';
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 28px;
+                    letter-spacing: -1.0714285373687744px;
+                    text-align: center;
+                    color: $darknavy;
+                }
+
+                p {
+                    font-family: 'Lexend Deca';
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 25px;
+                    text-align: center;
+                    color:  #939CAA;
+                }
+            }
+
+        }
+    }
+
+
+    .jobs {
+        padding: 12rem 165px 165px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &--offer {
+            padding: 1.5rem 5rem;
+            background: #F2F5F9;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+
+            h2 {
+                font-family: 'Space Mono';
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 28px;
+                letter-spacing: -1.0714285373687744px;
+                text-align: left;
+                color: $darknavy;
+                margin-bottom: 0px;
+            }
+
+
+            p {
+                margin-top:  1rem;
+                font-family: 'Lexend Deca';
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 25px;
+                text-align: left;
+                color:  #495567;
+            }
+
+            
+            a {
+                height: 2rem;
+            }
+        }
+    } 
+
+ }
