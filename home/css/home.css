@@ -58,7 +58,6 @@ nav a{
     color: #939CAA;
 }
 
-
 .button{
     grid-column: 3/4;
     grid-row: 1/2;
@@ -84,61 +83,109 @@ nav a{
     transform: translateY(-100%);
     transition: transform 0.3s ease-in-out;
 }
-/*
+
+main{
+}
+
 main section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     width: 2610px;
-    height: 1740px;
+    height: 650px;
     gap: 0px;
-    background-size: cover;
-    background-position: center;
+    background-size: 150%;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    max-width: 100%;
     background-image: url('scootbackground.png');
-    }
-}*/
+    position: relative;
+}
+
+main section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(47, 59, 89, 0.75);
+    z-index: 1;
+}
+
+section h1{
+    width: 500px;
+    height: 112px;
+    font-family: "Space Mono", serif;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    text-align: left;
+    color: #FFFFFF;
+    z-index: 2;
+    margin-top: 153px;
+    margin-left: 165px;
+}
+
+main section p{
+    width: 405px;
+    height: 100px;
+    font-family: "Lexend Deca", serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    color: #FFFFFF;
+    z-index: 2;
+    margin-top: 305px;
+    margin-left: 260px;
+}
 
 .roadmap{
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    height: 511px;
     align-items: center;
     text-align: left;
-    max-width: 1275px;
+    max-width: 1106px;
     height: 291px;
     margin: 0 auto;
+    margin-bottom: 160px;
+    margin-top: 160px;
 }
 
-.roadmap .roadmap_blockA,{
+.roadmap .roadmap_blockA{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-column: 1/2;
     grid-row: 1/2;
     gap: 0px;
-    width: 730px;
+    width: 350px;
     height: 300px;
     background-size: cover;
     background-image: url('images/79.png');
 }
 
-.roadmap .roadmap_blockB,{
+.roadmap .roadmap_blockB{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-column: 2/3;
     grid-row: 1/2;
     gap: 0px;
-    width: 730px;
+    width: 350px;
     height: 300px;
     background-size: cover;
     background-image: url('images/79.png');
 }
 
-.roadmap .roadmap_blockC,{
+.roadmap .roadmap_blockC{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-column: 3/4;
     grid-row: 1/2;
     gap: 0px;
-    width: 730px;
+    width: 350px;
     height: 300px;
     background-size: cover;
     background-image: url('images/79.png');
@@ -157,7 +204,7 @@ main section{
     align-items: center;
     }
 
-.roadmap h3{
+.roadmap hs3{
 font-family: "Space Mono";
 font-size: 24px;
 font-weight: 700;
@@ -179,12 +226,32 @@ p{
 .roadmap::before {
     content: "";
     position: absolute;
-    top: 90px;
-    left: -200px; /* Adjust this value as needed */
+    top: 47px;
+    left: -260px; /* Adjust this value as needed */
     width: 1054px;
     height: 15px;
     background-color: #E5ECF4;
     z-index: -1; /* This ensures the line is behind all other content */
+}
+
+.round-image {
+    width: 445px;
+    height: 445px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+article{
+    display: grid;
+    grid-template-columns: 445px 220px 445px;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 1619px;
+    height: 445px;
+    gap: 0px;
+    opacity: 0px;
+    max-width: 1106px;
+    margin: 0 auto;
+    margin-bottom: 160px;
 }
 
 .article_title{
@@ -196,27 +263,6 @@ p{
     letter-spacing: -2.142857074737549px;
     text-align: left;
     color: #495567;
-}
-
-.round-image {
-    width: 445px;
-    height: 445px;
-    border-radius: 50%;
-    object-fit: cover; /* This will ensure the image covers the full width and height */
-}
-
-article{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    width: 1619px;
-    height: 445px;
-    gap: 0px;
-    opacity: 0px;
-
-}
-
-.article_title{
     grid-column: 1/2;
     grid-row: 1/2;
 }
@@ -256,4 +302,58 @@ article .button{
 aside{
     grid-column: 3/4;
     grid-row: 1/4;
+}
+
+.article_title2{
+    font-family: "Space Mono";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: left;
+    letter-spacing: -2.142857074737549px;
+    text-align: left;
+    color: #495567;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+article .button2{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    width: 180px;
+    height: 53px;
+    top: 22px;
+    gap: 0px;
+    opacity: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FCB72B;
+    color: #FFF;
+    font-family: "Space Mono";
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.para{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    font-family: "Lexend Deca";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    color: #939CAA;
+}
+
+.round-image2{
+    grid-column: 1/2    ;
+    grid-row: 1/4;
+    width: 445px;
+    height: 445px;
+    border-radius: 50%;
+    object-fit: cover;
 }
