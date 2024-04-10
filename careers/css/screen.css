@@ -331,6 +331,12 @@ body {
   text-decoration: none;
 }
 
+.button:hover {
+  background-color: transparent;
+  border: 3px solid #FCB72B;
+  color: #FCB72B;
+}
+
 header {
   padding: 0 165px;
   height: 80px;
@@ -355,6 +361,9 @@ header nav ul li a {
   line-height: 25px;
   text-align: left;
   color: #939caa;
+}
+header nav ul li a:hover {
+  color: #FCB72B;
 }
 header .button {
   padding: 10px 50px;

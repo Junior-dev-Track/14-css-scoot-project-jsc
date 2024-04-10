@@ -22,6 +22,13 @@ body {
 	text-decoration: none;
 }
 
+.button:hover {
+    background-color: transparent;
+    border: 3px solid $yellow;
+    color: $yellow;
+
+}
+
 header {
 	padding: 0 165px;
 	height: 80px;
@@ -48,7 +55,13 @@ header {
 					line-height: 25px;
 					text-align: left;
 					color: #939caa;
+
+                    
 				}
+
+                a:hover {
+                    color: $yellow;
+                }
 			}
 		}
 	}
@@ -384,4 +397,9 @@ main {
 			}
 		}
 	}
+}
+
+
+@media screen and (max-width: 768px) {
+
 }
