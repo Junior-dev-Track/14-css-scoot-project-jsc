@@ -316,6 +316,7 @@ html {
 
 body {
   margin: 0px;
+  overflow-x: hidden;
 }
 
 .button {
@@ -330,15 +331,45 @@ body {
   text-decoration: none;
 }
 
+header {
+  padding: 0 165px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav {
+  margin-right: auto;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-family: Space Mono;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: left;
+  color: #939caa;
+}
+header .button {
+  padding: 10px 50px;
+}
+
 .banner {
   background-image: url("../../images/Bitmap.jpg");
   background-size: cover;
   background-position: center;
   box-sizing: border-box;
-  width: 100vw;
+  width: 100%;
   padding: 0 165px;
 }
 .banner--content {
+  max-width: 1110px;
   width: 1110px;
   height: 150px;
   display: flex;
@@ -354,31 +385,31 @@ body {
   text-align: left;
   color: white;
 }
-.banner .banner__circles {
+.banner__circles {
   position: absolute;
   right: -31px;
-  top: 38px;
+  top: 115px;
   width: 234px;
   height: 63px;
   padding: 0.5px 0px 0.5px 0px;
   display: flex;
   justify-content: space-between;
 }
-.banner .banner__circles--circle {
+.banner__circles--circle {
   width: 62px;
   height: 62px;
   gap: 0px;
-  border: 3px solid #FFFFFF;
+  border: 3px solid #ffffff;
   border-radius: 50%;
   opacity: 0px;
 }
-.banner .banner__circles--half-circle {
+.banner__circles--half-circle {
   width: 62px;
   height: 62px;
-  gap: 0px;
-  border: 3px solid #FFFFFF;
-  border-radius: 50%;
+  border: 3px solid #ffffff;
+  border-radius: 50% 0 0 50%;
   background-color: white;
+  clip-path: inset(0 31px 0 0);
 }
 
 main .care {
@@ -436,30 +467,30 @@ main .why--reasons {
   justify-content: space-between;
   flex-wrap: nowrap;
 }
-main .why--reasons .why__values {
+main .why__values {
   margin-top: 5rem;
   width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-main .why--reasons .why__values--image {
+main .why__values--image {
   width: 220px;
   height: 220px;
   border-radius: 50%;
   background-size: cover;
   margin-bottom: -3.5rem;
 }
-main .why--reasons .why__values--tech {
+main .why__values--tech {
   background-image: url("../../images/tech.png");
 }
-main .why--reasons .why__values--integrity {
+main .why__values--integrity {
   background-image: url("../../images/integrity.png");
 }
-main .why--reasons .why__values--community {
+main .why__values--community {
   background-image: url("../../images/community.png");
 }
-main .why--reasons .why__values--number {
+main .why__values--number {
   width: 96px;
   height: 96px;
   border-radius: 50%;
@@ -467,7 +498,7 @@ main .why--reasons .why__values--number {
   display: flex;
   align-items: center;
 }
-main .why--reasons .why__values--number .number {
+main .why__values--number .number {
   font-family: "Space Mono";
   font-size: 24px;
   font-weight: 700;
@@ -476,7 +507,7 @@ main .why--reasons .why__values--number .number {
   width: 100%;
   color: #495567;
 }
-main .why--reasons .why__values h3 {
+main .why__values h3 {
   font-family: "Space Mono";
   font-size: 24px;
   font-weight: 700;
@@ -485,13 +516,13 @@ main .why--reasons .why__values h3 {
   text-align: center;
   color: #495567;
 }
-main .why--reasons .why__values p {
+main .why__values p {
   font-family: "Lexend Deca";
   font-size: 15px;
   font-weight: 400;
   line-height: 25px;
   text-align: center;
-  color: #939CAA;
+  color: #939caa;
 }
 main .jobs {
   padding: 12rem 165px 165px;
@@ -501,7 +532,7 @@ main .jobs {
 }
 main .jobs--offer {
   padding: 1.5rem 5rem;
-  background: #F2F5F9;
+  background: #f2f5f9;
   justify-content: space-between;
   margin-bottom: 2rem;
   display: flex;
@@ -528,6 +559,72 @@ main .jobs--offer p {
 }
 main .jobs--offer a {
   height: 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .button {
+    padding: 10px 25px;
+  }
+  header {
+    min-width: 500px;
+    padding: 0 75px;
+  }
+  main .banner {
+    height: 150px;
+  }
+  main .banner__circles {
+    top: 130px;
+    width: 175px;
+  }
+  main .banner__circles--circle {
+    width: 40px;
+    height: 40px;
+  }
+  main .banner__circles--half-circle {
+    width: 40px;
+    height: 40px;
+  }
+  main .care {
+    padding-top: 8rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  main .care__image {
+    box-sizing: border-box;
+    align-self: flex-end;
+    background-size: contain;
+    width: 700px;
+    height: 450px;
+    left: 0;
+  }
+  main .care__text {
+    width: auto;
+    margin-left: -90px;
+    margin-right: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .care__text h2 {
+    text-align: center;
+  }
+  main .care__text p {
+    text-align: center;
+  }
+  main .care__text a {
+    text-align: center;
+  }
+  main .why--reasons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .why__values {
+    width: 100%;
+  }
+  main .why__values p {
+    width: 90%;
+  }
 }
 
 /*# sourceMappingURL=screen.css.map */
