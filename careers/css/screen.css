@@ -361,7 +361,7 @@ header .button {
 }
 
 .banner {
-  background-image: url("../../images/Bitmap.jpg");
+  background-image: url("../../images/careers-locations-hero-desktop.jpg");
   background-size: cover;
   background-position: center;
   box-sizing: border-box;
@@ -623,7 +623,7 @@ main .jobs--offer a {
     width: 100%;
   }
   main .why__values p {
-    width: 90%;
+    width: 70%;
   }
 }
 
