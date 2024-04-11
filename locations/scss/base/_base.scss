@@ -1,7 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend+Deca:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 html {
     font-size: 62.5%
 }
 
 body {
-    background-color: lightblue;
+}
+
+.button {
+	padding: 1.5rem 6rem;
+	background-color: $yellow;
+	font-family: "Space Mono";
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 25px;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+}
+
+.button:hover {
+    background-color: transparent;
+    border: 3px solid $yellow;
+    color: $yellow;
+}
+
+header {
+    max-width: 1110px;
+	margin: 0 auto;
+    padding: 2rem 0;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	nav {
+		margin-right: auto;
+
+		ul {
+			list-style: none;
+			display: flex;
+			justify-content: space-between;
+			gap: 3rem;
+
+			li {
+				a {
+					text-decoration: none;
+					font-family: Space Mono;
+					font-size: 15px;
+					font-weight: 700;
+					line-height: 25px;
+					text-align: left;
+					color: #939caa;
+
+                    
+				}
+
+                a:hover {
+                    color: $yellow;
+                }
+			}
+		}
+	}
+}
+
+.banner {
+	background-image: url("../../images/careers-locations-hero-desktop.jpg");
+	background-size: cover;
+	background-position: center;
+	box-sizing: border-box;
+
+	width: 100%;
+	padding: 2rem 0;
+
+	&--content {
+		max-width: 1110px;
+		height: 150px;
+        margin: 0 auto;
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		h1 {
+			font-family: "Space Mono";
+			font-size: 56px;
+			font-weight: 700;
+			line-height: 56px;
+			letter-spacing: -2.5px;
+			text-align: left;
+			color: white;
+		}
+	}
+
+	&__circles {
+		position: absolute;
+		right: -31px;
+		top: 155px;
+		width: 250px;
+		height: 63px;
+		padding: 0.5px 0px 0.5px 0px;
+		display: flex;
+		justify-content: space-between;
+
+		&--circle {
+			width: 62px;
+			height: 62px;
+			border: 3px solid #ffffff;
+			border-radius: 50%;
+		}
+
+		&--half-circle {
+			width: 62px;
+			height: 62px;
+			border: 3px solid #ffffff;
+			border-radius: 50% 0 0 50%;
+			background-color: white;
+			clip-path: inset(0 31px 0 0);
+		}
+	}
+}
+
+.cities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__map {
+        max-width: 1110px;
+        position: relative;
+   
+        img {
+            background-image: url("locations_map_background_desktop.png");
+            
+        }
+
+        &--cities {
+            background-color: $yellow;
+            width: 17%;
+            position: absolute;
+
+
+            p {
+                font-family: 'Space Mono';
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 28px;
+                letter-spacing: -1.0714285373687744px;
+                text-align: center;
+                color: #495567;
+            }
+
+        }
+
+        .new-york {
+            top: 7rem;
+            left: 15rem;
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 0;
+                height: 0;
+                border-left: 16px solid transparent;
+                border-right: 16px solid transparent;
+                border-top: 16px solid $yellow;
+                bottom: -1.5rem;
+                left: 7.5rem;
+            }
+        }
+
+        .london{
+            top: 1.5rem;
+            left: 40.9rem;
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 0;
+                height: 0;
+                border-left: 16px solid transparent;
+                border-right: 16px solid transparent;
+                border-top: 16px solid $yellow;
+                bottom: -1.5rem;
+                left: 7.5rem;
+            }
+        }
+
+        .yokohama{
+            top: 7.4rem;
+            left: 86rem;
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 0;
+                height: 0;
+                border-left: 16px solid transparent;
+                border-right: 16px solid transparent;
+                border-top: 16px solid $yellow;
+                bottom: -1.5rem;
+                left: 7.5rem;
+            }
+        }
+
+       .jakarta {
+            top: 24.8rem;
+            left: 78.3rem;
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 0;
+                height: 0;
+                border-left: 16px solid transparent;
+                border-right: 16px solid transparent;
+                border-top: 16px solid $yellow;
+                bottom: -1.5rem;
+                left: 7.5rem;
+            }
+        }
+    }
+
+    &__text {
+        max-width: 1110px;
+        margin: 7.5rem auto;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5rem;
+
+        h2 {
+            font-family: 'Space Mono';
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 48px;
+            letter-spacing: -2.142857074737549px;
+            text-align: left;
+            color:  #495567;
+            width: 100%;
+        }
+
+        p {
+            font-family: 'Lexend Deca';
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 25px;
+            text-align: left;
+            color:  #939CAA;
+        }
+
+        .button {
+            width: 30%;
+        }
+    }
 }
