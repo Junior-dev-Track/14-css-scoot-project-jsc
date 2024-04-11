@@ -59,6 +59,11 @@ nav ul{
 nav a{
     text-decoration: none;
     color: #939CAA;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+        color: #FCB72B;
 }
 
 .button{
@@ -80,12 +85,21 @@ nav a{
     line-height: 25px;
     text-align: center;
     cursor: pointer;
+    border: 3px solid #FCB72B; /* Add a border of the same color as the background */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #FFF; /* Change the background color to white on hover */
+    color: #FCB72B; /* Change the text color to #FCB72B on hover */
+    border: 3px solid #FCB72B; /* Keep the border color as #FCB72B on hover */
 }
 
 .header-hidden {
     transform: translateY(-100%);
     transition: transform 0.3s ease-in-out;
 }
+
 
 main{
 
@@ -160,8 +174,318 @@ section h1{
     margin-left: 165px;
 }
 
-section h1::before {
+.arrow {
+    content: "";
+    position: absolute;
+    top: 350px;
+    left: 0px; /* Adjust this value as needed */
+    width: 203px;
+    height: 15px;
+    background-color: #fcb72b;
+    z-index: 2;
+}
 
+.arrow2 {
+    position: absolute;
+    top: 350px;
+    left: 705px;
+    width: 350px;
+    height: 15px;
+    background-color: #fcb72b;
+    z-index: 2;
+}
+
+.arrow2::after {
+    content: "";
+    position: absolute;
+    right: -15px; /* Position the tip at the end of the arrow */
+    top: 0px; /* Center the tip vertically */
+    width: 0;
+    height: 0;
+    border-left: 15px solid #fcb72b;
+    border-top: 7.5px solid transparent; /* Half of the height */
+    border-bottom: 7.5px solid transparent; /* Half of the height */
+}
+
+.arrow3 {
+    position: absolute;
+    top: 357px;
+    left: 1055px;
+    width: 15px;
+    height: 94px;
+    background-color: #fcb72b;
+    z-index: 2;
+}
+
+.arrow3::after {
+    content: "";
+    position: absolute;
+    right: 0px; /* Position the tip at the end of the arrow */
+    top: 94px; /* Center the tip vertically */
+    width: 0;
+    height: 0;
+    border-top: 15px solid #fcb72b;
+    border-left: 7.5px solid transparent; /* Half of the width */
+    border-right: 7.5px solid transparent; /* Half of the width */
+    z-index: 2;
+}
+
+.arrow4 {
+    content: "";
+    position: absolute;
+    top: 451px;
+    left: 1062px;
+    width: 200px;
+    height: 15px;
+    background-color: #fcb72b;
+    z-index: 2;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.arrow5 {
+    content: "";
+    position: absolute;
+    top: 425px;
+    left: 1197px;
+    width: 70px;
+    height: 15px;
+    background-color: #fcb72b;
+    z-index: 2;
+    transform: rotate(45deg);
+}
+
+.arrow6 {
+    content: "";
+    position: absolute;
+    top: 478px;
+    left: 1197px;
+    width: 70px;
+    height: 15px;
+    background-color: #fcb72b;
+    z-index: 2;
+    transform: rotate(-45deg);
+}
+
+.circle {
+    position: absolute;
+    width: 62px;
+    height: 62px;
+    top: 425px;
+    left: 1415px;
+    border: 3px solid #ffffff;
+    border-radius: 50%; /* This makes the element circular */
+    opacity: 1; /* Change this to the desired opacity */
+    z-index: 2;
+}
+
+.circle2 {
+    position: absolute;
+    width: 62px;
+    height: 62px;
+    top: 425px;
+    left: 1501px;
+    border: 3px solid #ffffff;
+    border-radius: 50%; /* This makes the element circular */
+    opacity: 1; /* Change this to the desired opacity */
+    z-index: 2;
+}
+
+.circlefull {
+    position: absolute;
+    width: 62px;
+    height: 62px;
+    top: 425px;
+    left: 1587px;
+    border: 35px solid #ffffff;
+    border-radius: 50%; /* This makes the element circular */
+    opacity: 1; /* Change this to the desired opacity */
+    z-index: 2;
+}
+
+.arrow7 {
+    position: absolute;
+    top: 1687px;
+    left: 955px;
+    width: 15px;
+    height: 94px;
+    background-color: #fcb72b;
+    z-index: 2;
+}
+
+.arrow8 {
+    position: absolute;
+    top: 1687px;
+    left: 965px;
+    width: 640px;
+    height: 15px;
+    background-color: #fcb72b;
+    z-index: 2;
+}
+
+.arrow9 {
+    content: "";
+    position: absolute;
+    top: 1766px;
+    left: 766px;
+    width: 200px;
+    height: 15px;
+    background-color: #fcb72b;
+    z-index: 2;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.arrow10 {
+    content: "";
+    position: absolute;
+    top: 1792px;
+    left: 762px;
+    width: 70px;
+    height: 15px;
+    background-color: #fcb72b;
+    z-index: 2;
+    transform: rotate(45deg);
+}
+
+.arrow11 {
+    content: "";
+    position: absolute;
+    top: 1739px;
+    left: 762px;
+    width: 70px;
+    height: 15px;
+    background-color: #fcb72b;
+    z-index: 2;
+    transform: rotate(-45deg);
+}
+
+.arrow12 {
+    content: "";
+    position: absolute;
+    top: 2071px;
+    left: 250px;
+    width: 210px;
+    height: 15px;
+    background-color: #fcb72b;
+    z-index: 2;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.arrow13 {
+    content: "";
+    position: absolute;
+    top: 1966px;
+    left: 248px;
+    width: 15px;
+    height: 120px;
+    background-color: #fcb72b;
+    z-index: 2;
+}
+
+.arrow14 {
+    content: "";
+    position: absolute;
+    top: 1966px;
+    left: 0px;
+    width: 250px;
+    height: 15px;
+    background-color: #fcb72b;
+    z-index: 2;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.arrow16 {
+    content: "";
+    position: absolute;
+    top: 2045px;
+    left: 395px;
+    width: 70px;
+    height: 15px;
+    background-color: #fcb72b;
+    z-index: 2;
+    transform: rotate(45deg);
+}
+
+.arrow17 {
+    content: "";
+    position: absolute;
+    top: 2098px;
+    left: 395px;
+    width: 70px;
+    height: 15px;
+    background-color: #fcb72b;
+    z-index: 2;
+    transform: rotate(-45deg);
+}
+
+.arrow18 {
+    content: "";
+    position: absolute;
+    top: 2671px;
+    left: 1350px;
+    width: 300px;
+    height: 15px;
+    background-color: #fcb72b;
+    z-index: 2;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.arrow19 {
+    content: "";
+    position: absolute;
+    top: 2671px;
+    left: 1350px;
+    width: 15px;
+    height: 94px;
+    background-color: #fcb72b;
+    z-index: 2;
+}
+
+.arrow20 {
+    content: "";
+    position: absolute;
+    top: 2750px;
+    left: 1200px;
+    width: 150px;
+    height: 15px;
+    background-color: #fcb72b;
+    z-index: 2;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.arrow21 {
+    content: "";
+    position: absolute;
+    top: 2723px;
+    left: 1196px;
+    width: 70px;
+    height: 15px;
+    background-color: #fcb72b;
+    z-index: 2;
+    transform: rotate(-45deg);
+}
+
+.arrow22 {
+    content: "";
+    position: absolute;
+    top: 2777px;
+    left: 1196px;
+    width: 70px;
+    height: 15px;
+    background-color: #fcb72b;
+    z-index: 2;
+    transform: rotate(45deg);
 }
 
 section .button{
@@ -185,6 +509,14 @@ section .button{
     cursor: pointer;
     margin-left: 260px;
     z-index: 2;
+    border: 3px solid #FCB72B; /* Add a border of the same color as the background */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: transparent; /* Change the background color to white on hover */
+    color: #FCB72B; /* Change the text color to #FCB72B on hover */
+    border: 3px solid #FCB72B; /* Keep the border color as #FCB72B on hover */
 }
 
 main section p{
@@ -412,6 +744,14 @@ article .button2{
     line-height: 25px;
     text-align: center;
     cursor: pointer;
+    border: 3px solid #FCB72B; /* Add a border of the same color as the background */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.button2:hover {
+    background-color: #FFF; /* Change the background color to white on hover */
+    color: #FCB72B; /* Change the text color to #FCB72B on hover */
+    border: 3px solid #FCB72B; /* Keep the border color as #FCB72B on hover */
 }
 
 .para{
