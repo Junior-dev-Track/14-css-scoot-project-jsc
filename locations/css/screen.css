@@ -651,5 +651,126 @@ header nav ul li a:hover {
     max-width: 14%;
   }
 }
+@media screen and (max-width: 767px) {
+  header {
+    max-width: 300px;
+    padding: 2rem 0;
+    justify-content: space-around;
+  }
+  header .hamburger-menu {
+    position: absolute;
+    left: 30px;
+    width: 20px;
+    height: 16px;
+  }
+  header .hamburger-menu__lines {
+    margin-bottom: 0.3rem;
+    width: 20px;
+    height: 4px;
+    background-color: #FCB72B;
+  }
+  header nav {
+    display: none;
+  }
+  header .button {
+    display: none;
+  }
+  .banner--content {
+    justify-content: center;
+    align-items: center;
+    max-height: 100px;
+  }
+  .banner--content h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -1.7857142687px;
+    text-align: center;
+    margin: 0;
+  }
+  .banner__circles {
+    display: none;
+  }
+  .cities {
+    padding-top: 5rem;
+  }
+  .cities__map {
+    max-width: 300px;
+  }
+  .cities__map--cities {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #FCB72B;
+  }
+  .cities__map--cities p {
+    margin: 0;
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    background-color: rgba(252, 183, 43, 0.1490196078);
+    font-family: "Space Mono";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -1.0714285374px;
+    text-align: center;
+    padding-top: 2rem;
+  }
+  .cities__map ::before {
+    display: none;
+  }
+  .cities__map .new-york {
+    top: 3rem;
+    left: 6.5rem;
+  }
+  .cities__map .new-york p {
+    top: 16rem;
+    left: -6.5rem;
+  }
+  .cities__map .london {
+    left: 12.8rem;
+  }
+  .cities__map .london p {
+    top: 25.6rem;
+    left: -12.8rem;
+  }
+  .cities__map .yokohama {
+    top: 3.9rem;
+    left: 24.9rem;
+  }
+  .cities__map .yokohama p {
+    top: 41.1rem;
+    left: -24.9rem;
+  }
+  .cities__map .jakarta {
+    top: 8.4rem;
+    left: 23rem;
+  }
+  .cities__map .jakarta p {
+    top: 27.8rem;
+    left: -23rem;
+  }
+  .cities__text {
+    margin-top: 45rem;
+  }
+  .cities__text h2 {
+    font-family: "Space Mono";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -1.4285714626px;
+    text-align: center;
+  }
+  .cities__text .button {
+    padding: 15px 30px;
+    font-family: "Space Mono";
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
+    max-width: 100%;
+  }
+}
 
 /*# sourceMappingURL=screen.css.map */
