@@ -8,6 +8,108 @@
 
 
 /* SCSS FOR ABOUT PAGE */
+
+/***********************/
+/*        HEADER       */
+/***********************/
+
+
+header{
+    display: grid;
+    grid-template-columns: 107px 819px 180px;
+    grid-row: 1fr;
+    max-width: 1106px;
+    max-height: 96px;
+    background-color: #fff;
+    padding: 22px 0px 2px 0px;
+    margin: 0 auto;
+
+}
+
+header .header_logo{
+ grid-column: 1/2;
+    grid-row: 1/2;
+    padding-top: 9px;
+}
+
+header nav{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: 5px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    list-style: none;
+    width: 100%;
+    padding-left: 58px;
+    margin-top: -3px;
+    padding-top: 10px;
+    font-family: "Space Mono";
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: left;
+    color: #939CAA;
+    gap: 32px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #939CAA;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+        color: #FCB72B;
+}
+
+.button{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    width: 180px;
+    height: 53px;
+    top: 22px;
+    margin-top: -9px;
+    gap: 0px;
+    opacity: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FCB72B;
+    color: #FFF;
+    font-family: "Space Mono";
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
+    cursor: pointer;
+    border: 3px solid #FCB72B; /* Add a border of the same color as the background */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #FFF; /* Change the background color to white on hover */
+    color: #FCB72B; /* Change the text color to #FCB72B on hover */
+    border: 3px solid #FCB72B; /* Keep the border color as #FCB72B on hover */
+}
+
+.header-hidden {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
 /***********************/
 /*        HEAD         */
 /***********************/
