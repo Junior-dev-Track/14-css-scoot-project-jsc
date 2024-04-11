@@ -166,7 +166,7 @@ main {
 		}
 
 		&__image {
-			background-image: url("../../images/Group15.png");
+			background-image: url("../../images/career_guy_desktop.png");
 			background-size: contain;
 			background-repeat: no-repeat;
 			background-position: center;
@@ -312,16 +312,13 @@ main {
 }
 
 @media screen and (max-width: 1200px) {
-	body {
-	}
-
 	.button {
 		padding: 10px 25px;
 	}
 
 	header {
 		min-width: 500px;
-		padding: 0 75px;
+		padding: 0 70px;
 	}
 
 	main {
@@ -400,6 +397,148 @@ main {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+	body {
+	}
 
+	header {
+		padding: 0;
+		min-width: 0;
+		justify-content: space-around;
+
+		.hamburger-menu {
+			position: absolute;
+			left: 30px;
+
+			width: 20px;
+			height: 16px;
+
+
+			&__lines {
+				margin-bottom: 0.3rem;
+				width: 20px;
+				height: 4px;
+				background-color: #FCB72B;
+
+			}
+		}
+
+		.header_logo {
+		}
+
+		nav {
+			display: none;
+		}
+
+		.button {
+			display: none;
+		}
+	}
+
+	main {
+		.banner {
+			padding: 0;
+			width: 100%;
+			display: flex;
+
+			&--content {
+				justify-content: center;
+				h1 {
+					margin: 0;
+					font-family: 'Space Mono';
+					font-size: 40px;
+					font-weight: 700;
+					line-height: 40px;
+					letter-spacing: -1.7857142686843872px;
+					text-align: center;				
+				}
+			}
+
+			&__circles {
+				display: none;
+			}
+		}
+
+		.care {
+			padding-left: 3rem;
+			padding-top: 1rem;
+
+			&__image {
+				left: 0;
+				width: 100%;
+				background-image: url("../../images/career_guy_mobile.png");
+				aspect-ratio: 4.5/5;
+			}
+
+			&__text {
+				margin: 0;
+				padding-right: 3rem;
+
+				h2 {
+					margin-top: 1rem;
+					font-family: 'Space Mono';
+					font-size: 32px;
+					font-weight: 700;
+					line-height: 32px;
+					letter-spacing: -1.4285714626312256px;
+					text-align: center;
+				}
+
+				p {
+					margin-bottom: 3rem;
+				}
+
+			}
+		}
+
+		.why {
+			h2 {
+				font-size: 32px;
+				font-weight: 700;
+				line-height: 32px;
+				letter-spacing: -1.4285714626312256px;
+				text-align: center;
+				margin-bottom: 0;
+				margin-top: 5rem;
+			}
+
+			&--reasons {
+				padding: 0 3rem;
+			}
+
+			&__values {
+				p {
+					width: 100%;
+				}
+			}
+
+		}
+
+		.jobs {
+			padding: 0 3rem;
+
+			&--offer {
+				flex-direction: column;
+
+				h2 {
+					font-size: 18px;
+					font-weight: 700;
+					line-height: 24px;
+					letter-spacing: -0.8035714030265808px;
+					text-align: center;
+
+				}
+
+				p {
+					margin-top: 0.5rem;
+					margin-bottom: 1rem;
+					text-align: center;
+				}
+
+				.button {
+					padding: 10px 90px;
+				}
+			}
+		}
+	}
 }
