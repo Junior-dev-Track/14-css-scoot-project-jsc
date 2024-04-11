@@ -413,6 +413,7 @@ header nav ul li a:hover {
 }
 
 .cities {
+  padding-top: 15rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -527,6 +528,128 @@ header nav ul li a:hover {
 }
 .cities__text .button {
   width: 30%;
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    max-width: 700px;
+  }
+  header .button {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+  .banner--content {
+    max-width: 700px;
+  }
+  .cities {
+    padding-top: 15rem;
+  }
+  .cities__map {
+    max-width: 700px;
+  }
+  .cities__map img {
+    background-image: url("locations_map_background_desktop.png");
+  }
+  .cities__map--cities {
+    background-color: #FCB72B;
+    width: 17%;
+    position: absolute;
+  }
+  .cities__map--cities p {
+    margin: 0.4rem auto;
+    font-family: "Space Mono";
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.5803571343px;
+    text-align: center;
+  }
+  .cities__map .new-york {
+    top: 4.7rem;
+    left: 10rem;
+  }
+  .cities__map .new-york::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 16px solid #FCB72B;
+    bottom: -1rem;
+    left: 4.4rem;
+  }
+  .cities__map .london {
+    top: 2rem;
+    left: 25.4rem;
+  }
+  .cities__map .london::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 16px solid #FCB72B;
+    bottom: -1rem;
+    left: 4.4rem;
+  }
+  .cities__map .yokohama {
+    top: 5.85rem;
+    left: 53.95rem;
+  }
+  .cities__map .yokohama::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 16px solid #FCB72B;
+    bottom: -1rem;
+    left: 4.4rem;
+  }
+  .cities__map .jakarta {
+    top: 16.7rem;
+    left: 49.1rem;
+  }
+  .cities__map .jakarta::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 16px solid #FCB72B;
+    bottom: -1rem;
+    left: 4.4rem;
+  }
+  .cities__text {
+    max-width: 700px;
+    flex-direction: column;
+  }
+  .cities__text h2 {
+    font-family: "Space Mono";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -2.1428570747px;
+    text-align: center;
+    width: 70%;
+    margin: 0;
+  }
+  .cities__text p {
+    font-family: "Lexend Deca";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+    max-width: 80%;
+    margin: 0;
+  }
+  .cities__text .button {
+    max-width: 14%;
+  }
 }
 
 /*# sourceMappingURL=screen.css.map */
