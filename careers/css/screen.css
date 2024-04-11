@@ -452,7 +452,7 @@ main .care__text p {
   margin-top: 0;
 }
 main .care__image {
-  background-image: url("../../images/Group15.png");
+  background-image: url("../../images/career_guy_desktop.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -576,7 +576,7 @@ main .jobs--offer a {
   }
   header {
     min-width: 500px;
-    padding: 0 75px;
+    padding: 0 70px;
   }
   main .banner {
     height: 150px;
@@ -633,6 +633,113 @@ main .jobs--offer a {
   }
   main .why__values p {
     width: 70%;
+  }
+}
+@media screen and (max-width: 767px) {
+  header {
+    padding: 0;
+    min-width: 0;
+    justify-content: space-around;
+  }
+  header .hamburger-menu {
+    position: absolute;
+    left: 30px;
+    width: 20px;
+    height: 16px;
+  }
+  header .hamburger-menu__lines {
+    margin-bottom: 0.3rem;
+    width: 20px;
+    height: 4px;
+    background-color: #FCB72B;
+  }
+  header nav {
+    display: none;
+  }
+  header .button {
+    display: none;
+  }
+  main .banner {
+    padding: 0;
+    width: 100%;
+    display: flex;
+  }
+  main .banner--content {
+    justify-content: center;
+  }
+  main .banner--content h1 {
+    margin: 0;
+    font-family: "Space Mono";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -1.7857142687px;
+    text-align: center;
+  }
+  main .banner__circles {
+    display: none;
+  }
+  main .care {
+    padding-left: 3rem;
+    padding-top: 1rem;
+  }
+  main .care__image {
+    left: 0;
+    width: 100%;
+    background-image: url("../../images/career_guy_mobile.png");
+    aspect-ratio: 4.5/5;
+  }
+  main .care__text {
+    margin: 0;
+    padding-right: 3rem;
+  }
+  main .care__text h2 {
+    margin-top: 1rem;
+    font-family: "Space Mono";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -1.4285714626px;
+    text-align: center;
+  }
+  main .care__text p {
+    margin-bottom: 3rem;
+  }
+  main .why h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -1.4285714626px;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 5rem;
+  }
+  main .why--reasons {
+    padding: 0 3rem;
+  }
+  main .why__values p {
+    width: 100%;
+  }
+  main .jobs {
+    padding: 0 3rem;
+  }
+  main .jobs--offer {
+    flex-direction: column;
+  }
+  main .jobs--offer h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.803571403px;
+    text-align: center;
+  }
+  main .jobs--offer p {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  main .jobs--offer .button {
+    padding: 10px 90px;
   }
 }
 

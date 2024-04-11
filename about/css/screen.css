@@ -5,6 +5,8 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -311,12 +313,22 @@ template {
 /* COULEURS */
 /* TYPO */
 /* BODY */
+* {
+  max-width: 1440px;
+}
+
 /* SCSS FOR ABOUT PAGE */
 /***********************/
 /*        HEAD         */
 /***********************/
+html {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .banner {
-  width: 1440px;
+  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -325,28 +337,381 @@ template {
   height: 200px;
 }
 
+/***********************/
+/*   PREMIERE PARTIE   */
+/***********************/
 .first_part {
   display: flex;
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.first_part_texte {
+  margin-left: 165px;
+  margin-top: 210px;
+}
+.first_part_texte h1 {
+  font-family: "Space Mono";
+  font-weight: 700;
+  font-size: 48px;
+  letter-spacing: -2.14px;
+  width: 445px;
+  height: 96px;
+  color: #495567;
+  line-height: 48px;
+}
+.first_part_texte p {
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  font-size: 15px;
+  color: #939CAA;
+  width: 445px;
+  height: 75px;
+  line-height: 25px;
+}
+
+.first_part_image img {
+  margin-top: 120px;
+  margin-left: 12.9%;
+  width: 735px;
 }
 
 .second_part {
   display: flex;
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 120px;
+}
+.second_part img {
+  height: 445px;
+  width: 610px;
 }
 
+.second_part_text {
+  margin-left: 220px;
+  margin-top: 120px;
+}
+.second_part_text h1 {
+  font-family: "Space Mono";
+  font-weight: 700;
+  font-size: 48px;
+  letter-spacing: -2.14px;
+  width: 445px;
+  height: 96px;
+  color: #495567;
+  line-height: 48px;
+}
+.second_part_text p {
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  font-size: 15px;
+  color: #939CAA;
+  width: 445px;
+  height: 75px;
+  line-height: 25px;
+}
+
+/*******************************/
+/*       DEUXIEME PARTIE       */
+/*******************************/
 .two_parts h1 {
   text-align: center;
+  margin-top: 120px;
+  margin-bottom: 48px;
+  font-family: "Space Mono";
+  font-weight: 700;
+  size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14px;
+  color: #495567;
 }
 
 .two_parts_img {
   width: 350px;
   height: 350px;
-  display: flex;
+  display: grid;
+  grid-template-areas: "a1 a2 a3";
 }
 
-.flex_img {
-  justify-content: space-around;
+.grid_img {
+  display: grid;
   width: 1110px;
+}
+
+.a1 {
+  grid-area: a1;
+  width: 350px;
+  height: 350px;
+  margin-right: 30px;
+  margin-left: 165px;
+}
+
+.a2 {
+  grid-area: a2;
+  width: 350px;
+  height: 350px;
+  margin-right: 30px;
+}
+
+.a3 {
+  grid-area: a3;
+  width: 350px;
+  height: 350px;
+  margin-right: 165px;
+}
+
+.two_parts_text {
+  display: grid;
+  grid-template-areas: "b1 b2 b3";
+}
+.two_parts_text h1 {
+  font-family: "Space Mono";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07px;
+  color: #495567;
+}
+
+.b1 {
+  grid-area: b1;
+  margin-left: 165px;
+  text-align: center;
+  width: 350px;
+  margin-top: 32px;
+}
+
+.b2 {
+  grid-area: b2;
+  margin-left: 30px;
+  text-align: center;
+  width: 350px;
+  margin-top: 32px;
+}
+
+.b3 {
+  grid-area: b3;
+  margin-right: 165px;
+  margin-left: 30px;
+  text-align: center;
+  width: 350px;
+  margin-top: 32px;
+}
+
+.two_parts_text_2 {
+  display: grid;
+  grid-template-areas: "c1 c2 c3";
+}
+.two_parts_text_2 p {
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #939CAA;
+}
+
+.c1 {
+  grid-area: c1;
+  width: 350px;
+  margin-left: 165px;
+  margin-right: 30px;
+}
+
+.c2 {
+  grid-area: c2;
+  width: 350px;
+  margin-right: 30px;
+}
+
+.c3 {
+  grid-area: c3;
+  width: 350px;
+  margin-right: 165px;
+}
+
+/***********************/
+/*   TROISIEME PARTIE  */
+/***********************/
+.faq {
+  text-align: center;
+  font-family: "Space Mono";
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14px;
+  color: #495567;
+  margin-top: 120px;
+}
+
+.flex {
+  display: flex; /* Establishes a flex container */
+  align-items: flex-start; /* Aligns children at the start of the cross axis */
+  flex-flow: column wrap;
+  justify-content: flex-start; /* Aligns children at the start of the main axis */
+  gap: 20px; /* Optional: adds space between the flex items */
+  float: right;
+  margin-top: 64px;
+  height: 407px;
+}
+
+.flex_two {
+  display: flex; /* Establishes a flex container */
+  align-items: flex-start; /* Aligns children at the start of the cross axis */
+  flex-flow: column wrap;
+  justify-content: flex-start; /* Aligns children at the start of the main axis */
+  gap: 20px; /* Optional: adds space between the flex items */
+  float: right;
+  margin-top: -120px;
+}
+
+#title_part_three {
+  width: 350px; /* You can adjust the width as needed */
+  display: inline-flex;
+  margin-top: 423px;
+  margin-left: 165px;
+}
+#title_part_three h1 {
+  font-family: "Space Mono";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1.79px;
+  color: #495567;
+}
+
+.third_part_title {
+  width: 350px; /* You can adjust the width as needed */
+  display: inline-flex;
+  margin-top: 145px;
+  margin-left: 165px;
+  transform: translateY(-75px);
+  /* display: block; is not needed, flex item is a block-level flex container */
+}
+.third_part_title h1 {
+  margin: 0;
+  font-family: "Space Mono";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1.79px;
+  color: #495567;
+}
+
+.box_questions {
+  width: 730px; /* You can adjust the width as needed */
+  margin-right: 165px;
+  background-color: #F2F5F9;
+  /* display: block; is not needed, flex item is a block-level flex container */
+}
+.box_questions:hover {
+  background-color: #FFF4DF;
+}
+
+.questions {
+  cursor: pointer;
+}
+.questions h2 {
+  font-family: "Space Mono";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07px;
+  color: #495567;
+  width: 650px;
+  height: 28px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.questions .arrow {
+  float: right;
+}
+
+.answers {
+  display: none;
+}
+.answers p {
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #495567;
+  margin-right: 40px;
+  margin-left: 40px;
+  width: 650px;
+  height: 75px;
+}
+
+.arrow {
+  color: #FCB72B;
+}
+
+/****************************/
+/*      BANNER FOOTER       */
+/****************************/
+.banner_footer img {
+  margin-top: 160px;
+  height: 300px;
+  margin-bottom: -5px;
+}
+
+/********************************/
+/*           FOOTER             */
+/********************************/
+footer {
+  background-color: #333A44;
+  padding: 1rem 0;
+  color: white;
+}
+footer .footer_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 2rem;
+}
+footer .footer_box .flex_content_one {
+  display: flex;
+  align-items: center;
+}
+footer .footer_box .flex_content_one .scoot_logo {
+  margin-right: 3rem;
+}
+footer .footer_box .flex_content_one .flex_nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+footer .footer_box .flex_content_one .flex_nav ul li a {
+  color: #939CAA;
+  text-decoration: none;
+  font-family: "Space Mono";
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+}
+footer .footer_box .flex_content_one .flex_nav ul li a:hover {
+  color: #FCB72B;
+}
+footer .footer_box .flex_content_two {
+  display: flex;
+  gap: 1rem;
+}
+footer .footer_box .flex_content_two img {
+  width: 24px;
+  height: 24px;
+}
+
+.icon {
+  transition: fill 0.3s;
+}
+
+.icon:hover {
+  filter: brightness(0) saturate(100%) invert(100%);
 }
 
 /*# sourceMappingURL=screen.css.map */
