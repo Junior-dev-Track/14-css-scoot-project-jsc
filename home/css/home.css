@@ -15,16 +15,31 @@ body{
      des cercles*/
 }
 
+
+.burger-nav {
+    display: none;
+}
+
+.main_scoot{
+    display:none;
+}
+
+.roadmap_mobile{
+    display: none;
+}
+
+.article_mobile{
+    display: none;
+}
+
 header{
     display: grid;
-    grid-template-columns: 107px 819px 180px;
-    grid-row: 1fr;
+    grid-template-columns: 107px auto auto;
     max-width: 1106px;
     max-height: 96px;
     background-color: #fff;
-    padding: 22px 0px 21px 0px;
+    padding: 22px 0 21px 0;
     margin: 0 auto;
-
 }
 
 header .header_logo{
@@ -47,7 +62,7 @@ nav ul{
     width: 100%;
     padding-left: 58px;
     padding-top: 14px;
-    font-family: "Space Mono";
+    font-family: "Space Mono", serif;
     font-size: 15px;
     font-weight: 700;
     line-height: 25px;
@@ -72,18 +87,19 @@ nav a:hover {
     width: 180px;
     height: 53px;
     top: 22px;
-    gap: 0px;
-    opacity: 0px;
+    gap: 0;
+    opacity: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #FCB72B;
     color: #FFF;
-    font-family: "Space Mono";
+    font-family: "Space Mono", serif;
     font-size: 15px;
     font-weight: 700;
     line-height: 25px;
     text-align: center;
+    justify-self: end;
     cursor: pointer;
     border: 3px solid #FCB72B; /* Add a border of the same color as the background */
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out;
@@ -124,7 +140,7 @@ main section{
     grid-template-rows: 1fr 1fr 1fr;
     width: 1640px;
     height: 650px;
-    gap: 0px;
+    gap: 0;
     background-size: 150%;
     background-position: left bottom;
     background-repeat: no-repeat;
@@ -140,10 +156,9 @@ main section::before {
     left: 1424px; /* Adjust this value */
     width: 445px;
     height: 445px;
-    background-color: #E5ECF4;
     border-radius: 50%;
     z-index: -1;
-    background: linear-gradient(90deg, #E5ECF4 50%, transparent 50%);
+    background: #E5ECF4 linear-gradient(90deg, #E5ECF4 50%, transparent 50%);
 }
 
 main section::after {
@@ -178,7 +193,7 @@ section h1{
     content: "";
     position: absolute;
     top: 350px;
-    left: 0px; /* Adjust this value as needed */
+    left: 0; /* Adjust this value as needed */
     width: 203px;
     height: 15px;
     background-color: #fcb72b;
@@ -199,12 +214,12 @@ section h1{
     content: "";
     position: absolute;
     right: -15px; /* Position the tip at the end of the arrow */
-    top: 0px; /* Center the tip vertically */
+    top: 0; /* Center the tip vertically */
     width: 0;
     height: 0;
     border-left: 15px solid #fcb72b;
-    border-top: 7.5px solid transparent; /* Half of the height */
-    border-bottom: 7.5px solid transparent; /* Half of the height */
+    border-top: 8px solid transparent; /* Half of the height */
+    border-bottom: 8px solid transparent; /* Half of the height */
 }
 
 .arrow3 {
@@ -220,13 +235,13 @@ section h1{
 .arrow3::after {
     content: "";
     position: absolute;
-    right: 0px; /* Position the tip at the end of the arrow */
+    right: 0; /* Position the tip at the end of the arrow */
     top: 94px; /* Center the tip vertically */
     width: 0;
     height: 0;
     border-top: 15px solid #fcb72b;
-    border-left: 7.5px solid transparent; /* Half of the width */
-    border-right: 7.5px solid transparent; /* Half of the width */
+    border-left: 8px solid transparent; /* Half of the width */
+    border-right: 8px solid transparent; /* Half of the width */
     z-index: 2;
 }
 
@@ -391,7 +406,7 @@ section h1{
     content: "";
     position: absolute;
     top: 1966px;
-    left: 0px;
+    left: 0;
     width: 250px;
     height: 15px;
     background-color: #fcb72b;
@@ -494,8 +509,8 @@ section .button{
     width: 180px;
     height: 53px;
     top: 22px;
-    gap: 0px;
-    opacity: 0px;
+    gap: 0;
+    opacity: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -552,7 +567,7 @@ main section p{
     grid-template-rows: 1fr 1fr 1fr;
     grid-column: 1/2;
     grid-row: 1/2;
-    gap: 0px;
+    gap: 0;
     width: 350px;
     height: 300px;
     background-size: cover;
@@ -564,7 +579,7 @@ main section p{
     grid-template-rows: 1fr 1fr 1fr;
     grid-column: 2/3;
     grid-row: 1/2;
-    gap: 0px;
+    gap: 0;
     width: 350px;
     height: 300px;
     background-size: cover;
@@ -576,7 +591,7 @@ main section p{
     grid-template-rows: 1fr 1fr 1fr;
     grid-column: 3/4;
     grid-row: 1/2;
-    gap: 0px;
+    gap: 0;
     width: 350px;
     height: 300px;
     background-size: cover;
@@ -607,7 +622,7 @@ text-align: left;
 }
 
 p{
-    font-family: "Lexend Deca";
+    font-family: "Lexend Deca", serif;
     font-size: 15px;
     font-weight: 400;
     line-height: 25px;
@@ -639,8 +654,8 @@ article{
     grid-template-rows: 1fr 1fr 1fr;
     width: 1619px;
     height: 445px;
-    gap: 0px;
-    opacity: 0px;
+    gap: 0;
+    opacity: 1;
     max-width: 1106px;
     margin: 0 auto;
     margin-bottom: 160px;
@@ -660,13 +675,12 @@ article::before {
 }
 
 .article_title{
-    font-family: "Space Mono";
+    font-family: "Space Mono", serif;
     font-size: 48px;
     font-weight: 700;
     line-height: 48px;
     text-align: left;
     letter-spacing: -2.142857074737549px;
-    text-align: left;
     color: #495567;
     grid-column: 1/2;
     grid-row: 1/2;
@@ -675,7 +689,7 @@ article::before {
 article p{
     grid-column: 1/2;
     grid-row: 2/3;
-    font-family: "Lexend Deca";
+    font-family: "Lexend Deca", serif;
     font-size: 15px;
     font-weight: 400;
     line-height: 25px;
@@ -689,8 +703,8 @@ article .button{
     width: 180px;
     height: 53px;
     top: 22px;
-    gap: 0px;
-    opacity: 0px;
+    gap: 0;
+    opacity: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -731,14 +745,14 @@ article .button2{
     width: 180px;
     height: 53px;
     top: 22px;
-    gap: 0px;
-    opacity: 0px;
+    gap: 0;
+    opacity: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #FCB72B;
     color: #FFF;
-    font-family: "Space Mono";
+    font-family: "Space Mono", serif;
     font-size: 15px;
     font-weight: 700;
     line-height: 25px;
@@ -757,7 +771,7 @@ article .button2{
 .para{
     grid-column: 3/4;
     grid-row: 2/3;
-    font-family: "Lexend Deca";
+    font-family: "Lexend Deca", serif;
     font-size: 15px;
     font-weight: 400;
     line-height: 25px;
@@ -775,8 +789,136 @@ article .button2{
 }
 
 @media screen and (max-width: 768px) {
+    header {
+        /* Adjust the styles as needed for tablet view */
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 20px 20px 20px;
+    }
 
-    * {
+    .arrow{
+        content: "";
+        position: absolute;
+        top: 520px;
+        left: 0; /* Adjust this value as needed */
+        width: 203px;
+        height: 15px;
+        background-color: #fcb72b;
+        z-index: 2;
+    }
+
+    .arrow2{
+        display: none;
+    }
+
+    .arrow3{
+        position: absolute;
+        top: 520px;
+        left: 203px;
+        width: 15px;
+        height: 74px;
+        background-color: #fcb72b;
+        z-index: 2;
+    }
+
+    .arrow3::after{
+       display: none;
+    }
+
+    .arrow4{
+        position: absolute;
+        top: 590px;
+        left: 203px;
+        width: 110px;
+        height: 15px;
+        background-color: #fcb72b;
+        z-index: 2;
+    }
+
+    .arrow5 {
+        content: "";
+        position: absolute;
+        top: 564px;
+        left: 248px;
+        width: 70px;
+        height: 15px;
+        background-color: #fcb72b;
+        z-index: 2;
+        transform: rotate(45deg);
+    }
+
+    .arrow6 {
+        content: "";
+        position: absolute;
+        top: 634px;
+        left: 248px;
+        width: 70px;
+        height: 15px;
+        background-color: #fcb72b;
+        z-index: 2;
+        transform: rotate(-45deg);
+    }
+
+
+    main section{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 112px 160px 53px;
+        gap: 0;
+        background-size: 150%;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        max-width: 100%;
+        background-image: url('scootbackground.png');
+        position: relative;
+        align-items: center;
+        justify-items: center;
+        align-content: center; /* This will center the grid rows vertically */
+        width: 768px;
+        height: 650px;
+    }
+
+    main section h1{
+            grid-row: 1/2;
+            font-family: "Space Mono", serif;
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 56px;
+            letter-spacing: -2.5px;
+            color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+            z-index: 2;
+        margin: 0;
+        }
+
+    main section p{
+        grid-row: 2/3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        z-index: 2;
+        margin: 0;
+    }
+
+main section .button{
+        grid-row: 3/4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+
+        * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -784,6 +926,10 @@ article .button2{
     }
 
     header {
+        display:none;
+    }
+
+    .tablet_nav {
         display:none;
     }
 
@@ -856,7 +1002,7 @@ article .button2{
         grid-row: 1/2;
         width: 311px;
         height: 120px;
-        font-family: "Space Mono";
+        font-family: "Space Mono", serif;
         font-size: 40px;
         font-weight: 700;
         line-height: 40px;
@@ -871,11 +1017,10 @@ article .button2{
         grid-row: 2/3;
         width: 311px;
         height: 120px;
-        font-family: "Lexend Deca";
+        font-family: "Lexend Deca", serif;
         font-size: 15px;
         font-weight: 400;
         line-height: 25px;
-        text-align: left;
         color: #FFF;
         z-index: 2;
         text-align: center;
@@ -887,14 +1032,14 @@ article .button2{
         width: 180px;
         height: 53px;
         top: 22px;
-        gap: 0px;
-        opacity: 0px;
+        gap: 0;
+        opacity: 1;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: #FCB72B;
         color: #FFF;
-        font-family: "Space Mono";
+        font-family: "Space Mono", serif;
         font-size: 15px;
         font-weight: 700;
         line-height: 25px;
@@ -907,7 +1052,7 @@ article .button2{
         content: "";
         position: absolute;
         top: 570px;
-        left: 0px; /* Adjust this value as needed */
+        left: 0; /* Adjust this value as needed */
         width: 130px;
         height: 15px;
         background-color: #fcb72b;
@@ -999,7 +1144,7 @@ article .button2{
         content: "";
         position: absolute;
         top: 2542px;
-        left: 0px; /* Adjust this value as needed */
+        left: 0; /* Adjust this value as needed */
         width: 100px;
         height: 15px;
         background-color: #fcb72b;
@@ -1144,9 +1289,9 @@ article .button2{
         grid-template-rows: 1fr 1fr 1fr;
         grid-column: 1/2;
         grid-row: 1/2;
-        gap: 0px;
+        gap: 0;
         width: 350px;
-        height: 300px;
+        height: 260px;
     }
 
     .roadmap_icon{
@@ -1166,7 +1311,7 @@ article .button2{
         grid-row: 2/3;
         gap: 0;
         width: 350px;
-        height: 300px;
+        height: 260px;
     }
 
     .roadmap_mobile .roadmap_blockC{
@@ -1174,9 +1319,9 @@ article .button2{
         grid-template-rows: 1fr 1fr 1fr;
         grid-column: 1/2;
         grid-row: 3/4;
-        gap: 0px;
+        gap: 0;
         width: 350px;
-        height: 300px;
+        height: 260px;
     }
 
     .roadmap_mobile h3{
@@ -1186,17 +1331,18 @@ article .button2{
         line-height: 28px;
         letter-spacing: -1.0714285373687744px;
         color: #495567;
-        margin-bottom: 20px; /* Adjust this value as needed */
+        max-height: 28px;
+        padding-top: 20px;
     }
 
     .roadmap_mobile p{
-        font-family: "Lexend Deca";
+        font-family: "Lexend Deca", serif;
         font-size: 15px;
         font-weight: 400;
         line-height: 25px;
         color: #939CAA;
         text-align: center;
-        margin-top: 20px; /* Adjust this value as needed */
+        padding-bottom: 20px;
     }
 
     article{
@@ -1225,7 +1371,7 @@ article .button2{
     }
 
     .article_mobile .article_title{
-        font-family: "Space Mono";
+        font-family: "Space Mono", serif;
         font-size: 32px;
         font-weight: 700;
         line-height: 32px;
@@ -1238,7 +1384,7 @@ article .button2{
     }
 
     .article_mobile p{
-        font-family: "Lexend Deca";
+        font-family: "Lexend Deca", serif;
         font-size: 15px;
         font-weight: 400;
         line-height: 25px;
@@ -1255,14 +1401,14 @@ article .button2{
         width: 180px;
         height: 53px;
         top: 22px;
-        gap: 0px;
-        opacity: 0px;
+        gap: 0;
+        opacity: 1;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: #FCB72B;
         color: #FFF;
-        font-family: "Space Mono";
+        font-family: "Space Mono", serif;
         font-size: 15px;
         font-weight: 700;
         line-height: 25px;
