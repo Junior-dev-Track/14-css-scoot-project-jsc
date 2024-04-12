@@ -314,6 +314,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .button {
   padding: 1.5rem 6rem;
   background-color: #FCB72B;
@@ -524,7 +528,7 @@ header nav ul li a:hover {
   font-weight: 400;
   line-height: 25px;
   text-align: left;
-  color: #939CAA;
+  color: #939caa;
 }
 .cities__text .button {
   width: 30%;
@@ -652,6 +656,13 @@ header nav ul li a:hover {
   }
 }
 @media screen and (max-width: 767px) {
+  .no-scroll {
+    overflow: hidden;
+  }
+  .filter {
+    background-color: black;
+    opacity: 0.7;
+  }
   header {
     max-width: 300px;
     padding: 2rem 0;
@@ -662,15 +673,50 @@ header nav ul li a:hover {
     left: 30px;
     width: 20px;
     height: 16px;
+    transition: transform 0.3s ease;
   }
   header .hamburger-menu__lines {
     margin-bottom: 0.3rem;
     width: 20px;
     height: 4px;
-    background-color: #FCB72B;
+    background-color: #fcb72b;
+  }
+  header .hamburger-menu .hamburger-menu__top-line {
+    transition: transform 0.3s ease;
+  }
+  header .hamburger-menu.hamburger-active {
+    top: 3.5rem;
+  }
+  header .hamburger-menu.hamburger-active .hamburger-menu__top-line {
+    transform: translateY(3.5px) rotate(45deg);
+  }
+  header .hamburger-menu.hamburger-active .hamburger-menu__bottom-line {
+    transform: translateY(-3.5px) rotate(-45deg);
+  }
+  header .hamburger-menu.hamburger-active .hamburger-menu__middle-line {
+    display: none;
   }
   header nav {
     display: none;
+  }
+  header .nav-active {
+    position: absolute;
+    left: 0;
+    top: 7.2rem;
+    display: block;
+    width: 70vw;
+    height: calc(100vh - 31.5px);
+    background-color: rgb(51, 58, 68);
+    z-index: 2;
+    overflow-y: hidden;
+  }
+  header .nav-active ul {
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+  }
+  header .nav-active ul li a {
+    color: rgb(229, 236, 244);
   }
   header .button {
     display: none;
