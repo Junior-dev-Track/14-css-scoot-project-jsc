@@ -9,6 +9,13 @@
 
 /* SCSS FOR ABOUT PAGE */
 
+
+@media (max-width: 1440px) and (min-width: 768px) {
+
+
+
+
+
 /***********************/
 /*        HEADER       */
 /***********************/
@@ -21,7 +28,7 @@ header{
     max-width: 1106px;
     max-height: 96px;
     background-color: #fff;
-    padding: 22px 0px 2px 0px;
+    padding: 22px 0px 21px 0px;
     margin: 0 auto;
 
 }
@@ -29,7 +36,7 @@ header{
 header .header_logo{
  grid-column: 1/2;
     grid-row: 1/2;
-    padding-top: 9px;
+    padding-top: 12px;
 }
 
 header nav{
@@ -45,8 +52,7 @@ nav ul{
     list-style: none;
     width: 100%;
     padding-left: 58px;
-    margin-top: -3px;
-    padding-top: 10px;
+    padding-top: 14px;
     font-family: "Space Mono";
     font-size: 15px;
     font-weight: 700;
@@ -72,7 +78,6 @@ nav a:hover {
     width: 180px;
     height: 53px;
     top: 22px;
-    margin-top: -9px;
     gap: 0px;
     opacity: 0px;
     display: flex;
@@ -101,6 +106,9 @@ nav a:hover {
     transition: transform 0.3s ease-in-out;
 }
 
+.burger-nav {
+    display: none;
+}
 
 
 
@@ -111,7 +119,7 @@ nav a:hover {
 
 
 /***********************/
-/*        HEAD         */
+/*        BANNER       */
 /***********************/
 
 html {
@@ -128,6 +136,18 @@ html {
     img {
         width: 1440px;
         height: 200px;
+    }
+}
+
+.banner_tablet {
+    img {
+        display: none;
+    }
+}
+
+.banner_mobile {
+    img {
+        display: none;
     }
 }
 
@@ -359,6 +379,10 @@ html {
     margin-right: 165px;
 }
 
+.item {
+    display: none;
+}
+
 /***********************/
 /*   TROISIEME PARTIE  */
 /***********************/
@@ -502,6 +526,10 @@ html {
     }
 }
 
+.banner_footer_tablet {
+    display: none;
+}
+
 
 /********************************/
 /*           FOOTER             */
@@ -572,9 +600,378 @@ footer {
     filter: brightness(0) saturate(100%) invert(100%);
   }
   
-  
+}
  
+  /***********************/
+  /*   TABLET VERSION    */
+  /***********************/
+
   
+  @media (max-width: 768px) and (min-width: 375px) {
+    
+    * {
+        max-width: 768px;
+    }
+
+
+    /***********************/
+    /*       HEADER        */
+    /***********************/
+
+
+
+
+
+
+    header {
+        width: 768px;
+        display: flex;
+
+
+
+        ul {
+            margin: 0;
+            padding: 0;
+            width: auto; 
+            list-style-type: none;
+            max-width: 768px;
+            display: flex;
+            margin-left: 58.18px;
+            
+            li {
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+
+
+
+    .header_logo  {
+        img {
+            width: 107.82px;
+            height: 28.56px;
+            margin-left: 39px;
+            margin-bottom:33.44px ;
+        }
+    }
+
+    
+    /***********************/
+    /*       BANNER        */
+    /***********************/
+    
+    
+    .banner img {
+      display: none;
+    }
   
-  
+    .banner_tablet img {
+      display: block;
+    }
+
+    /**************************/
+    /*    PREMIERE PARTIE     */
+    /**************************/
+
+
+    .first_part {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .first_part_image {
+        img {
+            width: 604px;
+            float: right;
+        }
+    }
+
+    .second_part {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /**************************/
+    /**   DEUXIEME PARTIE    **/
+    /**************************/
+
+    .two_parts_img {
+        display: none;
+    }
+
+    .two_parts_text {
+        display: none;
+    }
+
+    .two_parts_text_2 {
+        display: none;
+    }
+
+    .grid_tablet {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start; // Cela alignera les éléments en haut pour les grands écrans
+        height: 100vh; // Cela prend la hauteur entière de l'écran
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: -80px; // Ajustez cette valeur en fonction de la hauteur de votre nav ou en-tête
+      }
+    
+      .item {
+        width: 33.333%; // Divise l'espace horizontalement en trois pour les enfants
+        margin-bottom: 0; // Pas d'espacement entre les éléments en vue ligne
+        align-items: center; // Centre les éléments de .item sur l'axe horizontal
+        justify-content: center; // Centre les éléments de .item sur l'axe vertical
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
+        margin-left: auto;
+        // Ajoutez des styles supplémentaires pour la taille des images et le texte ici
+      }
+
+      /*********************************/
+      /**     TROISIEME PARTIE        **/
+      /*********************************/
+
+      .faq {
+        h1 {
+          margin-top: 800px; // Ajoute de l'espace au-dessus du titre de la FAQ
+          text-align: center; // Centre le titre si nécessaire
+          display: block;
+        }
+      }
+    
+      .third_part_title {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 150px; // Ajoute de l'espace entre le titre de la FAQ et le titre "How it works"
+        h1 {
+          text-align: center; // Centre le titre "How it works"
+        }
+      }
+    
+      .flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center; // Centre les boîtes de questions sur la page
+        width: 100%; // Utilise toute la largeur disponible
+      }
+    
+      .box_questions {
+        width: 689px; // Utilise toute la largeur disponible pour les boîtes de questions
+        max-width: 689px; // Fixe une largeur maximale pour les boîtes de questions
+        margin-bottom: 30px; // Ajoute de l'espace entre chaque boîte de question
+    
+        .questions h2 {
+          font-size: 1.25rem; // Ajuste la taille de la police pour les titres de questions
+          cursor: pointer; // Change le curseur pour indiquer que les titres sont interactifs
+        }
+    
+        .answers {
+          padding: 15px 0; // Ajoute du padding au-dessus et en dessous de la réponse
+          border-top: 1px solid #ccc; // Ajoute une bordure en haut pour séparer de la question
+          display: none; // Cache la réponse par défaut (peut être modifié avec JavaScript)
+        }
+      }
+
+      #title_part_three {
+        display: block;
+
+        h1 {
+            margin-top: 900px;
+        }
+        
+      }
+
+      .flex_two {
+        margin-top: 50px;
+      }
+
+      /**************************/
+      /*    BANNER FOOTER       */
+      /**************************/
+
+      .banner_footer {
+        display: none;
+      }
+
+
+
+      .banner_footer_tablet {
+
+        display: block;
+        margin-bottom: -5px;
+}
+
+  }
+
+
+  /*************************/
+  /*    MOBILE VERSION     */
+  /*************************/
+
+
+  @media (max-width: 375px) {
+
+     
+    * {
+        max-width: 375px;
+        overflow-x: clip;
+    }
+
+   
+    
+
+    
+    
+
+
+    /**********************/
+    /*       HEADER       */
+    /**********************/
+
+    header {
+        display: none;
+    }
+
+    .burger-nav {
+        display: block;
+    }
+
+    /*********************/
+    /*   BANNER HEADER   */
+    /*********************/
+
+    .banner_tablet {
+        img {
+            display: none;
+        }
+    }
+
+    .banner_mobile {
+        img {
+            display: block;
+            margin-bottom: 72px;
+        }
+    }
+
+    /*******************************/
+    /*       PREMIERE PARTIE       */
+    /*******************************/
+
+
+
+    .first_part_image {
+        width: 363.97px;
+        img {
+            position: absolute;
+            right: 0;
+        }
+    }
+
+    .first_part_texte {
+         
+        margin: 0;
+        
+        h1 {
+            width: 311px;
+            height: 64px;
+            font-size: 32px;
+            line-height: 32px;
+            letter-spacing: -1.43px;
+            text-align: center;
+            margin-left: 32px;
+            margin-right: 32px;
+            margin-top: 300px;
+            font-family: "Space Mono";
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+            letter-spacing: -1.43px;
+            color: #495567;
+        }
+
+        p {
+            width: 311px;
+            height: 100px;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            margin-bottom: 120px;
+            margin-left: 32px;
+            margin-right: 32px;
+            font-family: "Lexend Deca";
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            color: #939CAA;
+        }
+    }
+
+    .second_part_img {
+        img {
+            width: 311px;
+        }
+    }
+
+    .second_part_text {
+
+        h1 {
+            width: 311px;
+            height: 64px;
+            font-size: 32px;
+            line-height: 32px;
+            letter-spacing: -1.43px;
+            text-align: center;
+            margin-left: 32px;
+            margin-right: 32px;
+            margin-top: 56px;
+            font-family: "Space Mono";
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+            letter-spacing: -1.43px;
+            color: #495567;
+        }
+
+        p {
+            width: 311px;
+            height: 100px;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            margin-bottom: 120px;
+            margin-left: 32px;
+            margin-right: 32px;
+            font-family: "Lexend Deca";
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            color: #939CAA;
+        }
+    }
+
+    /*************************/
+    /**   DEUXIEME PARTIE   **/
+    /*************************/
+
+      .two_parts {
+        h1 {
+            display: block;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 120px;
+            font-family: "Space Mono";
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+            letter-spacing: -1.43px;
+            color: #495567;
+        }
+      }  
+  }
 
