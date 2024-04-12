@@ -634,6 +634,20 @@ main .jobs--offer a {
   main .why__values p {
     width: 70%;
   }
+  main .jobs {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  main .jobs__text h2 {
+    margin-top: 0;
+  }
+  main .jobs__text p {
+    margin-bottom: 0;
+  }
+  main .jobs a {
+    padding: 1.5rem 5rem;
+    padding-bottom: 2rem;
+  }
 }
 @media screen and (max-width: 767px) {
   header {
@@ -651,7 +665,7 @@ main .jobs--offer a {
     margin-bottom: 0.3rem;
     width: 20px;
     height: 4px;
-    background-color: #FCB72B;
+    background-color: #fcb72b;
   }
   header nav {
     display: none;

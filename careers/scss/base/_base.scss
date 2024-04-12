@@ -23,10 +23,9 @@ body {
 }
 
 .button:hover {
-    background-color: transparent;
-    border: 3px solid $yellow;
-    color: $yellow;
-
+	background-color: transparent;
+	border: 3px solid $yellow;
+	color: $yellow;
 }
 
 header {
@@ -55,13 +54,11 @@ header {
 					line-height: 25px;
 					text-align: left;
 					color: #939caa;
-
-                    
 				}
 
-                a:hover {
-                    color: $yellow;
-                }
+				a:hover {
+					color: $yellow;
+				}
 			}
 		}
 	}
@@ -393,9 +390,30 @@ main {
 				}
 			}
 		}
+
+		.jobs {
+			padding-left: 70px;
+			padding-right: 70px;
+			&--offer {
+			}
+
+			&__text {
+				h2 {
+					margin-top: 0;
+				}
+
+				p {
+					margin-bottom: 0;
+				}
+			}
+
+			a {
+				padding: 1.5rem 5rem;
+				padding-bottom: 2rem;
+			}
+		}
 	}
 }
-
 
 @media screen and (max-width: 767px) {
 	body {
@@ -413,13 +431,11 @@ main {
 			width: 20px;
 			height: 16px;
 
-
 			&__lines {
 				margin-bottom: 0.3rem;
 				width: 20px;
 				height: 4px;
-				background-color: #FCB72B;
-
+				background-color: #fcb72b;
 			}
 		}
 
@@ -445,12 +461,12 @@ main {
 				justify-content: center;
 				h1 {
 					margin: 0;
-					font-family: 'Space Mono';
+					font-family: "Space Mono";
 					font-size: 40px;
 					font-weight: 700;
 					line-height: 40px;
 					letter-spacing: -1.7857142686843872px;
-					text-align: center;				
+					text-align: center;
 				}
 			}
 
@@ -476,7 +492,7 @@ main {
 
 				h2 {
 					margin-top: 1rem;
-					font-family: 'Space Mono';
+					font-family: "Space Mono";
 					font-size: 32px;
 					font-weight: 700;
 					line-height: 32px;
@@ -487,7 +503,6 @@ main {
 				p {
 					margin-bottom: 3rem;
 				}
-
 			}
 		}
 
@@ -511,7 +526,6 @@ main {
 					width: 100%;
 				}
 			}
-
 		}
 
 		.jobs {
@@ -526,7 +540,6 @@ main {
 					line-height: 24px;
 					letter-spacing: -0.8035714030265808px;
 					text-align: center;
-
 				}
 
 				p {
