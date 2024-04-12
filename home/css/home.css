@@ -596,7 +596,7 @@ main section p{
     align-items: center;
     }
 
-.roadmap hs3{
+.roadmap h3{
     font-family: "Space Mono", serif;
 font-size: 24px;
 font-weight: 700;
@@ -827,7 +827,27 @@ article .button2{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         justify-items: center; /* This will center the content horizontally */
-        align-items: center; /
+        align-items: center;
+        width: 375px;
+        height: 650px;
+        gap: 0;
+        background-repeat: no-repeat;
+        max-width: 100%;
+        background-image: url('/home/css/scootbackground.png');
+        position: relative;
+        background-position: center bottom;
+        padding-top: 115px;
+    }
+
+    .main_scoot::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #2F3B59;
+        opacity: 0.75;
     }
 
     .main_scoot h1{
@@ -840,7 +860,7 @@ article .button2{
         font-weight: 700;
         line-height: 40px;
         letter-spacing: -1.7857142686843872px;
-        color: #953939;
+        color: #ffffff;
         z-index: 2;
         text-align: center;
     }
@@ -855,7 +875,7 @@ article .button2{
         font-weight: 400;
         line-height: 25px;
         text-align: left;
-        color: #5599be;
+        color: #FFF;
         z-index: 2;
         text-align: center;
     }
@@ -879,12 +899,13 @@ article .button2{
         line-height: 25px;
         text-align: center;
         cursor: pointer;
+        z-index: 2;
     }
 
     .arrow_mobile_1 {
         content: "";
         position: absolute;
-        top: 450px;
+        top: 570px;
         left: 0px; /* Adjust this value as needed */
         width: 130px;
         height: 15px;
@@ -895,7 +916,7 @@ article .button2{
     .arrow_mobile_2 {
         content: "";
         position: absolute;
-        top: 425px;
+        top: 545px;
         left: 71px;
         width: 63px;
         height: 15px;
@@ -907,7 +928,7 @@ article .button2{
     .arrow_mobile_3 {
         content: "";
         position: absolute;
-        top: 474px;
+        top: 595px;
         left: 71px;
         width: 63px;
         height: 15px;
@@ -915,6 +936,52 @@ article .button2{
         z-index: 2;
         transform: rotate(-45deg);
     }
+
+    .arrow_mobile_4 {
+        content: "";
+        position: absolute;
+        top: 1917px;
+        left: 200px; /* Adjust this value as needed */
+        width: 280px;
+        height: 15px;
+        background-color: #fcb72b;
+        z-index: 2;
+    }
+
+    .arrow_mobile_5 {
+        content: "";
+        position: absolute;
+        top: 1917px;
+        left: 200px; /* Adjust this value as needed */
+        width: 15px;
+        height: 100px;
+        background-color: #fcb72b;
+        z-index: 2;
+    }
+
+    .arrow_mobile_6 {
+        content: "";
+        position: absolute;
+        top: 2017px;
+        left:  50px; /* Adjust this value as needed */
+        width: 200px;
+        height: 15px;
+        background-color: #fcb72b;
+        z-index: 2;
+    }
+
+    .arrow_mobile_7 {
+        content: "";
+        position: absolute;
+        top: 595px;
+        left: 71px;
+        width: 63px;
+        height: 15px;
+        background-color: #fcb72b;
+        z-index: 2;
+        transform: rotate(-45deg);
+    }
+
 
     .roadmap{
         display: none;
@@ -941,6 +1008,8 @@ article .button2{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         align-items: center;
+        text-align: center;
+        justify-items: center;
     }
 
     .roadmap_mobile .roadmap_blockA{
@@ -951,8 +1020,16 @@ article .button2{
         gap: 0px;
         width: 350px;
         height: 300px;
-        background-size: cover;
-        background-image: url('./images/Oval.png');
+    }
+
+    .roadmap_icon{
+        background-image: url('/images/Oval.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .roadmap_mobile .roadmap_blockB{
@@ -960,11 +1037,9 @@ article .button2{
         grid-template-rows: 1fr 1fr 1fr;
         grid-column: 1/2;
         grid-row: 2/3;
-        gap: 0px;
+        gap: 0;
         width: 350px;
         height: 300px;
-        background-size: cover;
-        background-image: url('images/Oval.png);
     }
 
     .roadmap_mobile .roadmap_blockC{
@@ -975,8 +1050,6 @@ article .button2{
         gap: 0px;
         width: 350px;
         height: 300px;
-        background-size: cover;
-        background-image: url('images/Oval.png');
     }
 
     .roadmap_mobile h3{
@@ -985,8 +1058,8 @@ article .button2{
         font-weight: 700;
         line-height: 28px;
         letter-spacing: -1.0714285373687744px;
-        text-align: left;
         color: #495567;
+        margin-bottom: 20px; /* Adjust this value as needed */
     }
 
     .roadmap_mobile p{
@@ -994,8 +1067,81 @@ article .button2{
         font-size: 15px;
         font-weight: 400;
         line-height: 25px;
-        text-align: left;
         color: #939CAA;
+        text-align: center;
+        margin-top: 20px; /* Adjust this value as needed */
     }
+
+    article{
+        display: none;
+    }
+
+    .article_mobile{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        align-items: center;
+        text-align: center;
+        justify-items: center;
+        margin-left: 32px;
+        margin-right: 32px;
+        margin-top: 120px;
+    }
+
+    .article_mobile .round-image{
+        width: 311px;
+        height: 311px;
+        border-radius: 50%;
+        object-fit: cover;
+        grid-row: 1/2;
+        margin-bottom: 56px;
+    }
+
+    .article_mobile .article_title{
+        font-family: "Space Mono";
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: -1.4285714626312256px;
+        text-align: center;
+        color: #495567;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding-bottom: 32px;
+    }
+
+    .article_mobile p{
+        font-family: "Lexend Deca";
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+        color: #939CAA;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        text-align: center;
+        padding-bottom: 32px;
+    }
+
+    .article_mobile .button-mobile {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        width: 180px;
+        height: 53px;
+        top: 22px;
+        gap: 0px;
+        opacity: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FCB72B;
+        color: #FFF;
+        font-family: "Space Mono";
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 25px;
+        text-align: center;
+    }
+
+
 
 }
