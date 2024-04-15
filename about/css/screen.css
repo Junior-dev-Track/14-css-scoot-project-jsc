@@ -314,10 +314,10 @@ template {
 /* TYPO */
 /* BODY */
 /* SCSS FOR ABOUT PAGE */
+/*************************/
+/***    LARGE SCREEN  ****/
+/*************************/
 @media screen and (min-width: 1440px) and (max-width: 2560px) {
-  /*************************/
-  /***    LARGE SCREEN  ****/
-  /*************************/
   * {
     max-width: 2560px;
   }
@@ -525,12 +525,20 @@ template {
     max-width: 1110px;
     gap: 30px;
   }
-  .b1, .b2, .b3, .c1, .c2, .c3 {
-    font-family: "Space Mono", "Lexend Deca";
+  .b1, .b2, .b3 {
+    font-family: "Space Mono";
     font-weight: 700;
     font-size: 24px;
     color: #495567;
     line-height: 28px;
+  }
+  .c1, .c2, .c3 {
+    font-family: "Lexend Deca";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #939CAA;
   }
   p {
     font-weight: 400;
@@ -560,6 +568,11 @@ template {
     align-items: flex-start;
     justify-content: flex-start;
     margin-bottom: 64px; /* Space between sections */
+    flex-grow: 0;
+  }
+  .flex {
+    margin-left: auto;
+    margin-right: auto;
   }
   .third_part_title {
     font-family: "Space Mono";
@@ -569,6 +582,8 @@ template {
     letter-spacing: -1.79px;
     color: #495567;
     margin-right: 20px; /* Space between title and questions */
+    margin-left: auto;
+    margin-right: auto;
   }
   /* Flex container for questions */
   .flex, .flex_two {
@@ -602,6 +617,10 @@ template {
   .questions .arrow {
     transition: transform 0.3s ease;
   }
+  .flex_two {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .answers {
     display: none;
   }
@@ -616,8 +635,85 @@ template {
   .arrow {
     color: #FCB72B;
   }
+  /************************/
+  /*    FOOTER  BANNER    */
+  /************************/
+  .banner_footer_tablet {
+    display: none;
+  }
+  .banner_footer_mobile {
+    display: none;
+  }
+  .banner_footer {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /***********************/
+  /*      FOOTER         */
+  /***********************/
+  footer {
+    background-color: #333A44;
+    padding: 1rem 0;
+    color: white;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5px;
+  }
+  footer .footer_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  footer .footer_box .flex_content_one {
+    display: flex;
+    align-items: center;
+  }
+  footer .footer_box .flex_content_one .scoot_logo {
+    margin-right: 3rem;
+  }
+  footer .footer_box .flex_content_one .flex_nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  footer .footer_box .flex_content_one .flex_nav ul li a {
+    color: #939CAA;
+    text-decoration: none;
+    font-family: "Space Mono";
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  footer .footer_box .flex_content_one .flex_nav ul li a:hover {
+    color: #FCB72B;
+  }
+  footer .footer_box .flex_content_two {
+    display: flex;
+    gap: 1rem;
+  }
+  footer .footer_box .flex_content_two img {
+    width: 24px;
+    height: 24px;
+  }
+  .icon {
+    transition: fill 0.3s;
+  }
+  .icon:hover {
+    filter: brightness(0) saturate(100%) invert(100%);
+  }
 }
+/***************************/
+/*       ECRAN LAPTOP      */
+/***************************/
 @media (max-width: 1440px) and (min-width: 768px) {
+  body {
+    overflow-x: clip;
+  }
   * {
     max-width: 1440px;
   }
@@ -799,107 +895,46 @@ template {
   /*******************************/
   /*       DEUXIEME PARTIE       */
   /*******************************/
-  .two_parts h1 {
-    text-align: center;
-    margin-top: 120px;
-    margin-bottom: 48px;
-    font-family: "Space Mono";
-    font-weight: 700;
-    size: 48px;
-    line-height: 48px;
-    letter-spacing: -2.14px;
-    color: #495567;
-  }
-  .two_parts_img {
-    width: 350px;
-    height: 350px;
-    display: grid;
-    grid-template-areas: "a1 a2 a3";
+  .two_parts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
   .grid_img {
-    display: grid;
-    width: 1110px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
-  .a1 {
-    grid-area: a1;
+  .two_parts_img {
+    display: flex;
+    justify-content: center;
+    width: auto;
+  }
+  .a1, .a2, .a3 {
     width: 350px;
     height: 350px;
-    margin-right: 30px;
-    margin-left: 165px;
+    margin: 0 15px;
   }
-  .a2 {
-    grid-area: a2;
-    width: 350px;
-    height: 350px;
-    margin-right: 30px;
-  }
-  .a3 {
-    grid-area: a3;
-    width: 350px;
-    height: 350px;
-    margin-right: 165px;
-  }
-  .two_parts_text {
-    display: grid;
-    grid-template-areas: "b1 b2 b3";
-  }
-  .two_parts_text h1 {
-    font-family: "Space Mono";
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: -1.07px;
-    color: #495567;
-  }
-  .b1 {
-    grid-area: b1;
-    margin-left: 165px;
-    text-align: center;
-    width: 350px;
+  .two_parts_text, .two_parts_text_2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
     margin-top: 32px;
   }
-  .b2 {
-    grid-area: b2;
-    margin-left: 30px;
-    text-align: center;
-    width: 350px;
-    margin-top: 32px;
-  }
-  .b3 {
-    grid-area: b3;
-    margin-right: 165px;
-    margin-left: 30px;
-    text-align: center;
-    width: 350px;
-    margin-top: 32px;
-  }
-  .two_parts_text_2 {
-    display: grid;
-    grid-template-areas: "c1 c2 c3";
-  }
-  .two_parts_text_2 p {
+  .two_parts_text p, .two_parts_text_2 p {
     font-family: "Lexend Deca";
     font-weight: 400;
     font-size: 15px;
-    line-height: 25px;
-    text-align: center;
     color: #939CAA;
+    width: 445px;
+    height: 75px;
+    line-height: 25px;
   }
-  .c1 {
-    grid-area: c1;
+  .b1, .b2, .b3, .c1, .c2, .c3 {
     width: 350px;
-    margin-left: 165px;
-    margin-right: 30px;
-  }
-  .c2 {
-    grid-area: c2;
-    width: 350px;
-    margin-right: 30px;
-  }
-  .c3 {
-    grid-area: c3;
-    width: 350px;
-    margin-right: 165px;
+    text-align: center;
+    margin: 0 15px;
   }
   .item {
     display: none;
@@ -917,61 +952,39 @@ template {
     color: #495567;
     margin-top: 120px;
   }
+  /* Container for each section including title and boxes */
+  .section-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 64px; /* Space between sections */
+    flex-grow: 0;
+  }
   .flex {
-    display: flex; /* Establishes a flex container */
-    align-items: flex-start; /* Aligns children at the start of the cross axis */
-    flex-flow: column wrap;
-    justify-content: flex-start; /* Aligns children at the start of the main axis */
-    gap: 20px; /* Optional: adds space between the flex items */
-    float: right;
-    margin-top: 64px;
-    height: 407px;
-  }
-  .flex_two {
-    display: flex; /* Establishes a flex container */
-    align-items: flex-start; /* Aligns children at the start of the cross axis */
-    flex-flow: column wrap;
-    justify-content: flex-start; /* Aligns children at the start of the main axis */
-    gap: 20px; /* Optional: adds space between the flex items */
-    float: right;
-    margin-top: -120px;
-  }
-  #title_part_three {
-    width: 350px; /* You can adjust the width as needed */
-    display: inline-flex;
-    margin-top: 423px;
-    margin-left: 165px;
-  }
-  #title_part_three h1 {
-    font-family: "Space Mono";
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 48px;
-    letter-spacing: -1.79px;
-    color: #495567;
+    margin-left: auto;
+    margin-right: auto;
   }
   .third_part_title {
-    width: 350px; /* You can adjust the width as needed */
-    display: inline-flex;
-    margin-top: 145px;
-    margin-left: 165px;
-    transform: translateY(-75px);
-    /* display: block; is not needed, flex item is a block-level flex container */
-  }
-  .third_part_title h1 {
-    margin: 0;
     font-family: "Space Mono";
     font-weight: 700;
     font-size: 40px;
     line-height: 48px;
     letter-spacing: -1.79px;
     color: #495567;
+    margin-right: 20px; /* Space between title and questions */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Flex container for questions */
+  .flex, .flex_two {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 730px; /* Adjust to fit the content */
   }
   .box_questions {
-    width: 730px; /* You can adjust the width as needed */
-    margin-right: 165px;
     background-color: #F2F5F9;
-    /* display: block; is not needed, flex item is a block-level flex container */
+    margin-bottom: 20px;
   }
   .box_questions:hover {
     background-color: #FFF4DF;
@@ -986,13 +999,17 @@ template {
     line-height: 28px;
     letter-spacing: -1.07px;
     color: #495567;
-    width: 650px;
-    height: 28px;
-    margin-left: 40px;
-    margin-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
   }
   .questions .arrow {
-    float: right;
+    transition: transform 0.3s ease;
+  }
+  .flex_two {
+    margin-left: auto;
+    margin-right: auto;
   }
   .answers {
     display: none;
@@ -1003,10 +1020,7 @@ template {
     font-size: 15px;
     line-height: 25px;
     color: #495567;
-    margin-right: 40px;
-    margin-left: 40px;
-    width: 650px;
-    height: 75px;
+    padding: 0 40px 20px 40px;
   }
   .arrow {
     color: #FCB72B;
